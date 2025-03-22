@@ -28,7 +28,27 @@ body {
     color: white !important;
 }
 
-/* ✅ Adjust Buttons & Links in Dark Mode */
+/* ✅ Adjust Sections in Dark Mode */
+.dark-theme .section,
+.dark-theme .about,
+.dark-theme .hero,
+.dark-theme .services,
+.dark-theme .contact,
+.dark-theme footer { /* ✅ Added Footer Dark Mode */
+    background: #121212 !important;
+    color: white !important;
+}
+
+/* ✅ Adjust Cards & Boxes in Dark Mode */
+.dark-theme .about-card,
+.dark-theme .additional-info,
+.dark-theme .service-card {
+    background: #1e1e1e !important;
+    color: white !important;
+    border-left-color: #00bcd4; /* Keep neon cyan accent */
+}
+
+/* ✅ Adjust Buttons in Dark Mode */
 .dark-theme .btn {
     background: #00bcd4 !important;
     color: black !important;
@@ -36,6 +56,57 @@ body {
 
 .dark-theme .btn:hover {
     background: #0097a7 !important;
+}
+
+/* ✅ Update Borders in Dark Mode */
+.dark-theme img,
+.dark-theme .about-image img {
+    border-color: #00bcd4 !important;
+}
+
+/* ✅ Typewriter Effect in Dark Mode */
+.dark-theme .typewriter {
+    border-right: 2px solid #00bcd4 !important;
+}
+
+/* ✅ Footer Styling (Light Mode) */
+footer {
+    background: #0a192f; /* Default dark blue */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* ✅ Dark Mode Footer */
+.dark-theme footer {
+    background: #121212 !important; /* Dark background */
+    color: white !important;
+    border-top: 2px solid #00bcd4; /* Accent border */
+}
+
+/* ✅ Footer Links */
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #0097a7;
+}
+
+/* ✅ Social Icons in Footer */
+footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.dark-theme footer .social-icons a {
+    color: #00bcd4 !important;
+}
+
+.dark-theme footer .social-icons a:hover {
+    color: #0097a7 !important;
 }
 
 /* ✅ Container (For Centering Content) */
@@ -76,7 +147,7 @@ p {
     line-height: 1.6;
 }
 
-/* ✅ Apply Dark Mode Text Colors */
+/* ✅ Adjust Text Colors in Dark Mode */
 .dark-theme h1,
 .dark-theme h2,
 .dark-theme p {
@@ -88,21 +159,6 @@ p {
     color: #00bcd4;
 }
 
-/* ✅ Buttons */
-.btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background: #00bcd4;
-    color: white;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-
-.btn:hover {
-    background: #0097a7;
-}
-
 /* ✅ Adjust Highlight Color in Dark Mode */
 .dark-theme .highlight {
     color: #00e5ff;
@@ -112,5 +168,14 @@ p {
 @media (max-width: 768px) {
     .section {
         padding: 40px 0;
+    }
+
+    /* ✅ Adjust Footer for Mobile */
+    footer {
+        padding: 15px 0;
+    }
+
+    .dark-theme footer {
+        padding: 15px 0;
     }
 }
