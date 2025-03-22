@@ -1,0 +1,69 @@
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 600px;
+    margin: auto;
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px); /* Slight movement */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.contact.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #00bcd4; /* Neon Cyan */
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f5f7fa;
+    color: #0a192f;
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+.contact button {
+    background: #00bcd4;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #0097a7;
+}
+
+/* ✅ Mobile Optimization */
+@media (max-width: 768px) {
+    .contact {
+        padding: 30px 10px;
+    }
+}
+
+/* ✅ Status Message Styling */
+.status-message {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #00796b; /* Dark Cyan */
+}

@@ -1,0 +1,24 @@
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .socials a {
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .socials a:hover {
+    color: #007bff;
+  }
+  
+  /* Mobile Optimization */
+  @media (max-width: 768px) {
+    .socials a {
+      font-size: 1.3rem;
+    }
+  }
+  

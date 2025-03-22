@@ -1,0 +1,95 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #f5f7fa; /* Light Blue Background */
+    animation: fadeIn 1.5s ease-in-out; /* ✅ Background Fade Animation */
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #0a192f; /* Dark Blue Text */
+}
+
+/* ✅ Text Reveal Animation for "Hi, I'm" */
+.hero h1 .highlight {
+    color: #00bcd4; /* Neon Cyan for Highlighted Text */
+    display: inline-block;
+    animation: slideIn 1.5s ease-in-out forwards;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #0a192f; /* Dark Blue Text */
+}
+
+/* ✅ Buttons Container (Removed Animation) */
+.hero-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adds space between buttons */
+}
+
+/* ✅ Standard Button Style */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #00bcd4; /* Neon Cyan */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: #0097a7; /* Darker Neon Cyan on Hover */
+    transform: scale(1.05);
+}
+
+/* ✅ Mobile Optimization */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ✅ Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

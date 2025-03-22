@@ -1,0 +1,115 @@
+/* ✅ Default Light Mode */
+body {
+    background: #f5f7fa;
+    color: #0a192f;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ✅ Dark Mode */
+.dark-theme {
+    background: #121212 !important;
+    color: white !important;
+}
+
+/* ✅ Ensure Header Changes in Dark Mode */
+.dark-theme .header {
+    background: #1e1e1e !important;
+}
+
+/* ✅ Ensure Navigation in Dark Mode */
+.dark-theme .nav a {
+    color: white !important;
+}
+
+/* ✅ Header Styles */
+.header {
+    background: #0a192f;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+/* ✅ Adds space between logo and nav */
+.spacer {
+    flex-grow: 1;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #00bcd4;
+}
+
+/* ✅ Theme Toggle Button (Top Right) */
+.theme-toggle {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: #00bcd4;
+}
+
+/* ✅ Navigation */
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #00bcd4;
+}
+
+/* ✅ Mobile Menu */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+/* ✅ Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        background: #0a192f;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    /* ✅ Ensuring theme toggle stays in the top-right even in mobile */
+    .theme-toggle {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+}
