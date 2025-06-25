@@ -113,6 +113,19 @@
     animation: blinkCursor 0.8s infinite;
 }
 
+.additional-info ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.additional-info li {
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+}
+
+
 /* ✅ Cursor Blinking Effect */
 @keyframes blinkCursor {
     50% {

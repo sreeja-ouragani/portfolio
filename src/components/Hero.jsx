@@ -50,14 +50,10 @@ const Hero = () => {
         </motion.h1>
 
         {/* ✅ Animated Subtitle */}
-        <motion.p
-          key={key + 1}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.8 }}
-        >
-          Full Stack Developer | AI&ML Enthusiast
-        </motion.p>
+       <p className="tagline">
+  AIML Engineer | Full Stack Developer | Building tech that solves real problems
+</p>
+
 
         {/* ❌ Removed Animation from Buttons */}
         <div className="hero-buttons">

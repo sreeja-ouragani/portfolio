@@ -13,18 +13,32 @@ const About = () => {
     "I'm Sreeja, a Full-Stack Developer specializing in React, Next.js, Node.js, and AI/ML integration. I have experience in building scalable web applications and cloud-based solutions. With a strong foundation in AWS, I focus on crafting optimized backend systems while delivering seamless user experiences.";
 
   const extraText =
-    "Beyond coding, I love dancing and exploring new technologies. I'm always eager to learn and challenge myself with innovative projects that push the boundaries of tech.";
+    "Beyond coding, I enjoy dancing and exploring new technologies. I'm a continuous learner who loves challenging myself with innovative projects that push the boundaries of AI and web development.";
 
   const additionalDetails = (
     <div className="additional-info">
       <h3>Languages:</h3>
       <p>Telugu, Hindi, English</p>
-      
+
       <h3>Education:</h3>
-      <p>B.Tech CSE (AI & ML) - Malla Reddy University (2022-2026), CGPA: 8.92 (Till 5th Semester)</p>
+      <p>
+        B.Tech in Computer Science and Engineering (AI & ML), Malla Reddy University — CGPA: 8.92 (Till 5th Sem)
+      </p>
 
       <h3>Interests:</h3>
-      <p>AI&ML, Full-Stack Development, AWS Cloud, Competitive Programming</p>
+      <p>AI & ML, Full-Stack Development, AWS Cloud, Competitive Programming</p>
+
+      <h3>Highlights:</h3>
+      <ul>
+        <li>📌 Full Stack Intern @ Unified Mentor (Dec 2024 – Jan 2025)</li>
+        <li>🏆 Participated in 5+ National Hackathons (AI, EdTech, Cybersecurity)</li>
+        <li>🚀 Selected for E-Summit 2025 via TiE Hyderabad & Startup India</li>
+        <li>🎨 Poster Designing Runner-up | 🕺 Dance Winner</li>
+        <li>👩‍💼 Served as Class Representative</li>
+      </ul>
+
+      <h3>Tools & Platforms:</h3>
+      <p>Git, GitHub, Vercel, Postman, Figma, MongoDB Atlas, Google Colab</p>
     </div>
   );
 
@@ -68,7 +82,7 @@ const About = () => {
 
         {/* ✅ Profile Picture */}
         <div className={`about-image ${showImage ? "fade-in" : ""}`}>
-          <img src={myPhoto} alt="My Profile" />
+          <img src={myPhoto} alt="My Profile" loading="lazy" />
         </div>
 
         {/* ✅ About Card */}
